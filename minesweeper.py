@@ -144,6 +144,32 @@ class Minesweeper:
 
     def getNeighbors(self, x, y):
         neighbors = []
+        c2coords = [ # 5 x 5 cords. A harder version. Note: I have not added numbers of 9 - 24 yet, so using this may crash your game.
+            {"x": x - 2, "y": y - 2},
+            {"x": x - 2, "y": y - 1},
+            {"x": x - 2, "y": y},
+            {"x": x - 2, "y": y + 1},
+            {"x": x - 2, "y": y + 2},
+            {"x": x - 1, "y": y - 2},
+            {"x": x - 1, "y": y - 1},
+            {"x": x - 1, "y": y},
+            {"x": x - 1, "y": y + 1},
+            {"x": x - 1, "y": y + 2},
+            {"x": x, "y": y - 2},
+            {"x": x, "y": y - 1},
+            {"x": x, "y": y + 1},
+            {"x": x, "y": y + 2},
+            {"x": x + 1, "y": y - 2},
+            {"x": x + 1, "y": y - 1},
+            {"x": x + 1, "y": y},
+            {"x": x + 1, "y": y + 1},
+            {"x": x + 1, "y": y + 2},
+            {"x": x + 2, "y": y - 2},
+            {"x": x + 2, "y": y - 1},
+            {"x": x + 2, "y": y},
+            {"x": x + 2, "y": y + 1},
+            {"x": x + 2, "y": y + 2}
+        ]
         coords = [
             {"x": x-1,  "y": y-1},  #top right
             {"x": x-1,  "y": y},    #top middle
